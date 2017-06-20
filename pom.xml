@@ -1,65 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.flipkart.lego</groupId>
-    <artifactId>lois</artifactId>
-    <version>1.1.4-SNAPSHOT</version>
-    <packaging>jar</packaging>
+	<groupId>com.flipkart.lego</groupId>
+	<artifactId>lois</artifactId>
+	<version>1.1.4-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-    <description>Go like channels for java</description>
-    <url>http://flipkart-incubator.github.io/Lois/</url>
+	<description>Go like channels for java</description>
+	<url>http://flipkart-incubator.github.io/Lois/</url>
 
-    <scm>
-        <connection>scm:git:https://github.com/flipkart-incubator/Lois.git</connection>
-        <developerConnection>scm:git:https://github.com/flipkart-incubator/Lois.git</developerConnection>
-        <tag>HEAD</tag>
-        <url>https://github.com/flipkart-incubator/Lois</url>
-    </scm>
+	<scm>
+		<connection>scm:git:https://github.com/innogames/Lois.git</connection>
+		<developerConnection>scm:git:https://github.com/innogames/Lois.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/innogames/Lois</url>
+	</scm>
 
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-            <comments>A business-friendly OSS license</comments>
-        </license>
-    </licenses>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
-    <dependencies>
+	<dependencies>
 
-            <dependency>
-                <groupId>uk.com.robust-it</groupId>
-                <artifactId>cloning</artifactId>
-                <version>1.9.0</version>
-            </dependency>
+		<dependency>
+			<groupId>uk.com.robust-it</groupId>
+			<artifactId>cloning</artifactId>
+			<version>1.9.4</version>
+		</dependency>
 
-        <!-- testing -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.8.8</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+		<!-- testing -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>clojars</id>
-            <name>Clojars repository</name>
-            <url>https://clojars.org/repo</url>
-        </repository>
-    </distributionManagement>
+	<distributionManagement>
+		<repository>
+			<id>innogames-artifactory</id>
+			<name>The InnoGames Artifactory Relases Repository to send releases to</name>
+			<url>https://artifacts.innogames.de/libs-release-local</url>
+		</repository>
+	</distributionManagement>
 
-    <repositories>
-        <repository>
-            <id>sonatype.releases</id>
-            <url>http://oss.sonatype.org/content/repositories/releases/</url>
-        </repository>
-    </repositories>
-    
+	<repositories>
+		<repository>
+			<id>innogames-artifactory</id>
+			<name>The InnoGames Artifactory Relases Repository to get releases from</name>
+			<url>https://artifacts.innogames.de/innogames-maven</url>
+		</repository>
+	</repositories>
+
 </project>
